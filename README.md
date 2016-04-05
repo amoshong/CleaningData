@@ -23,8 +23,6 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ##The dataset includes the following files:
 
-- 'README.txt'
-
 - 'run_analysis.R' : R script does the following.1.Merges the training and the test sets to create one data set. 2.Extracts only the measurements on the mean and standard deviation for each measurement. 3.Uses descriptive activity names to name the activities in the data set 4.Appropriately labels the data set with descriptive variable names. 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 - 'feature_all.txt': result of step1 of run_analysis.R. subject, activity code, activity labels and all features by merging the training and the test sets.
@@ -32,6 +30,8 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - 'feature_mean_std.txt':result of step2 of run_analysis.R. subject, activity code, activity labels and only the features on the mean and standard deviation from feature_all.txt.
 
 - 'feature_ave.txt': result of step5 of run_analysis.R. subject, activity labels and  the average of each variable for each activity and each subject.
+
+- 'CodeBook.md' : descripbe columns for feature_all.txt, feature_mean_std.txt and feature_ave.txt
 
 
 ##Notes: 
