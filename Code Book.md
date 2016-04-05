@@ -2,9 +2,10 @@
 
 ## The first three column for Feature_all.txt are:
 
--subject: subject data merged from subject_train.txt and subject_test.txt
--activity_codes: encoding activity data merged from yTrain.txt and yTest.txt
--activity_labels: descriptive activity label corresponding to activity_codes. the mapping relation is as,1 WALKING
+- subject: subject data merged from subject_train.txt and subject_test.txt
+- activity_codes: encoding activity data merged from yTrain.txt and yTest.txt
+- activity_labels: descriptive activity label corresponding to activity_codes. the mapping relation is as
+1 WALKING
 2 WALKING_UPSTAIRS
 3 WALKING_DOWNSTAIRS
 4 SITTING
@@ -14,7 +15,7 @@
 
 ##The feature variables available in 'Feature_all.txt' are variables, named by the pattern "item - statistic", and several additional variables
 
--Item description
+- Item description
 
 The feature items selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -65,7 +66,7 @@ kurtosis(): kurtosis of the frequency domain signal
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 angle(): Angle between to vectors.
 
--Addition Variables:
+- Addition Variables:
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 gravityMean
@@ -78,9 +79,10 @@ tBodyGyroJerkMean
 
 ## The first three column for Feature_all.txt and Feature_mean_std.txt are:
 
--subject: subject data merged from subject_train.txt and subject_test.txt
--activity_codes: encoding activity data merged from yTrain.txt and yTest.txt
--activity_labels: descriptive activity label corresponding to activity_codes. the mapping relation is as,1 WALKING
+- subject: subject data merged from subject_train.txt and subject_test.txt
+- activity_codes: encoding activity data merged from yTrain.txt and yTest.txt
+- activity_labels: descriptive activity label corresponding to activity_codes. the mapping relation is as
+1 WALKING
 2 WALKING_UPSTAIRS
 3 WALKING_DOWNSTAIRS
 4 SITTING
@@ -95,9 +97,8 @@ tBodyGyroJerkMean
 
 ## The first two column for Feature_all.txt and Feature_mean_std.txt are:
 
--subject: subject data merged from subject_train.txt and subject_test.txt
--activity: descriptive activity label (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-
+- subject: subject data merged from subject_train.txt and subject_test.txt
+- activity: descriptive activity label (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
 ## The feature variables available in 'Feature_ave.txt' are only the measurements on the mean and standard deviation for each measurement items in feature_all.txt.
 
