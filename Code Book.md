@@ -1,4 +1,6 @@
-#Feature_all.txt : the result of step1 of run_analysis.R. It contains columns of subject, activity code, activity labels and all features by merging the training and the test sets.
+# Feature_all.txt 
+
+## File description: the result of step1 of run_analysis.R. It contains columns of subject, activity code, activity labels and all features by merging the training and the test sets.
 
 ## The first three column for Feature_all.txt are:
 
@@ -75,7 +77,9 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-# Feature_mean_std.txt : :result of step2 of run_analysis.R. It contains columns of subject, activity code, activity labels and only the features on the mean and standard deviation from feature_all.txt.
+# Feature_mean_std.txt
+
+## File description: result of step2 of run_analysis.R. It contains columns of subject, activity code, activity labels and only the features on the mean and standard deviation from feature_all.txt.
 
 ## The first three column for Feature_all.txt and Feature_mean_std.txt are:
 
@@ -93,7 +97,9 @@ tBodyGyroJerkMean
 
 ## The feature variables available in 'Feature_mean_std.txt' are only the measurements on the mean and standard deviation for each measurement items feature_all.txt.
 
-# Feature_ave.txt: result of step5 of run_analysis.R. subject, activity labels and the average of each variable for each activity and each subject.
+# Feature_ave.txt
+
+## File description: result of step5 of run_analysis.R. subject, activity labels and the average of each variable for each activity and each subject.
 
 ## The first two column for Feature_ave.txt are:
 
