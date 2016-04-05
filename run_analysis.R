@@ -14,9 +14,6 @@ XTest<-read.table("./R/UCI HAR Dataset/test/X_test.txt",dec=" ",col.names=FName)
 yTest<-read.table("./R/UCI HAR Dataset/test/y_test.txt",col.names="activity_codes")
 SubjectTest<-read.table("./R/UCI HAR Dataset/test/subject_test.txt",col.names="subject")
 
-
-
-
 # merge into a single table
 Feature_all=rbind(XTrain,XTest)
 #deal with scientific notation
@@ -53,7 +50,6 @@ Act_Sub=strsplit(row.names(ActFeatureAve),"\\.")
 Act_Sub=data.frame(Activity=sapply(Act_Sub,function(X) X[1]),Subject=sapply(Act_Sub,function(X) X[2]))
 ActFeatureAve=cbind(Act_Sub,ActFeatureAve)
 rm(Act_Sub,FName,ColIdx)
-
 
 ## 6. exportto file
 
