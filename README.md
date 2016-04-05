@@ -1,4 +1,4 @@
-#R script and dataset for "Getting and Cleaning Data Course Project"
+#R script and output file for "Getting and Cleaning Data Course Project"
 
 ## Input data
 The input raw data is from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
