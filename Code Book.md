@@ -1,12 +1,11 @@
-# Feature_all.txt 
+# Feature_ave.txt 
 
-## File description: the result of step1 of run_analysis.R. It contains columns of subject, activity code, activity labels and all features by merging the training and the test sets.
+## File description: the result of step 5 of run_analysis.R. It contains columns of subject, activity labels and features on the mean() and tsd() by merging the training and the test sets. Each row represents the average of each feature on a certain activity and certain subject 
 
-## The first three column for Feature_all.txt are:
+## The first two columns for Feature_ave.txt are:
 
-- subject: subject data merged from subject_train.txt and subject_test.txt
-- activity_codes: encoding activity data merged from yTrain.txt and yTest.txt
-- activity_labels: descriptive activity label corresponding to activity_codes. the mapping relation is as
+- subject: subject data merged from subject_train.txt and subject_test.txt. The level is from 1 to 30.
+- activity_labels: descriptive activity label corresponding to activity_codes. the level is as
 1 WALKING
 2 WALKING_UPSTAIRS
 3 WALKING_DOWNSTAIRS
@@ -15,7 +14,7 @@
 6 LAYING
 
 
-##The feature variables available in 'Feature_all.txt' are variables, named by the pattern "item - statistic", and several additional variables
+##The feature variables available in 'Feature_ave.txt' are variables, named by the pattern "feature item - statistic".
 
 - Item description
 
@@ -52,59 +51,3 @@ The set of variables that were estimated from these signals are:
 
 mean(): Mean value
 std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
-
-- Addition Variables:
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
-
-# Feature_mean_std.txt
-
-## File description: result of step2 of run_analysis.R. It contains columns of subject, activity code, activity labels and only the features on the mean and standard deviation from feature_all.txt.
-
-## The first three column for Feature_all.txt and Feature_mean_std.txt are:
-
-- subject: subject data merged from subject_train.txt and subject_test.txt
-- activity_codes: encoding activity data merged from yTrain.txt and yTest.txt
-- activity_labels: descriptive activity label corresponding to activity_codes. the mapping relation is as
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
-
-
-
-## The feature variables available in 'Feature_mean_std.txt' are only the measurements on the mean and standard deviation for each measurement items feature_all.txt.
-
-# Feature_ave.txt
-
-## File description: result of step5 of run_analysis.R. subject, activity labels and the average of each variable for each activity and each subject.
-
-## The first two column for Feature_ave.txt are:
-
-- subject: subject data merged from subject_train.txt and subject_test.txt
-- activity: descriptive activity label (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-
-## The feature variables available in 'Feature_ave.txt' are only the measurements on the mean and standard deviation for each measurement items in feature_all.txt.
-
