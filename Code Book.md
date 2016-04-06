@@ -1,6 +1,6 @@
 # Feature_ave.txt 
 
-## File description: the result of step 5 of run_analysis.R. It contains columns of subject, activity labels and features on the mean() and tsd() by merging the training and the test sets. Each row represents the average of each feature on a certain activity and certain subject 
+## File description: the result of step 5 of run_analysis.R. It contains columns of subject, activity labels and features on the mean() and tsd(). Each row represents the average of these features on a certain activity and certain subject 
 
 ## The first two columns for Feature_ave.txt are:
 
@@ -14,9 +14,9 @@
 6 LAYING
 
 
-##The feature variables available in 'Feature_ave.txt' are variables, named by the pattern "feature item - statistic".
+## From 3rd columns, columns are variables named by the pattern "feature item - statistic".
 
-- Item description
+- Feature item description
 
 The feature items selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
