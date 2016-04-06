@@ -28,7 +28,7 @@ rm(Activities,Subjects,SubjectTrain,SubjectTest)
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 ##get columns with mean()or std()
-ColIdx=grep("mean()|std()",FName)
+ColIdx=grep("mean\\(\\)|std\\(\\)",FName)
 Feature_mean_std=Feature_all[,ColIdx];
 rm(XTrain,yTrain,XTest,yTest)
 
